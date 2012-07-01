@@ -5,8 +5,73 @@
 <script src='coffee-script.js'></script>
 
 <script type='text/coffeescript' src='chipinfo.coffee'></script>
+
+<style>
+#view{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 256px;
+}
+
+#side{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 256px;
+	background: whiteSmoke;
+}
+
+.pin{
+	-webkit-transition: fill 0.3s ease;
+}
+
+.pin.selected{
+	fill: #fc4;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+.pin-tooltip{
+	position: absolute;
+	width: 100px;
+	margin-left: -50px;
+	height: 50px;
+	margin-top: -25px;
+	background: #ccc;
+	border-radius: 8px;
+	border: 2px solid #888;
+	-webkit-animation: fadeIn 500ms ease;
+}
+
+.pin-tooltip h1{
+	font-size: 12px;
+	margin: 4px;
+}
+
+
+</style>
+
 </head>
 <body>
+
+<section id='view'>
+
+</section>
+
+<section id='side'>
+
+</section>
 
 </body>
 </html>
