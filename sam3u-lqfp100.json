@@ -1,804 +1,1707 @@
 {
     "pins": [
         {
-            "pin": 1, 
-            "extra": "", 
             "signal": "VDDANA", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 1
         }, 
         {
-            "pin": 2, 
-            "extra": "", 
             "signal": "ADVREF", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 2
         }, 
         {
-            "pin": 3, 
-            "extra": "", 
             "signal": "GNDANA", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 3
         }, 
         {
-            "pin": 4, 
-            "extra": "", 
             "signal": "AD12BVREF", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 4
         }, 
         {
-            "pin": 5, 
-            "extra": "AD12B0", 
             "signal": "PA22", 
-            "per_a": "TXD2", 
-            "per_b": "RTS1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 5
         }, 
         {
-            "pin": 6, 
-            "extra": "AD12B1", 
             "signal": "PA30", 
-            "per_a": "TF", 
-            "per_b": "TIOA2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 6
         }, 
         {
-            "pin": 7, 
-            "extra": "AD12B2", 
             "signal": "PB3", 
-            "per_a": "PWMH3", 
-            "per_b": "A5", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 7
         }, 
         {
-            "pin": 8, 
-            "extra": "AD12B3", 
             "signal": "PB4", 
-            "per_a": "TCLK1", 
-            "per_b": "A6", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 8
         }, 
         {
-            "pin": 9, 
-            "extra": "", 
             "signal": "VDDCORE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 9
         }, 
         {
-            "pin": 10, 
-            "extra": "", 
             "signal": "PA13", 
-            "per_a": "MISO", 
-            "per_b": "", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 10
         }, 
         {
-            "pin": 11, 
-            "extra": "", 
             "signal": "PA14", 
-            "per_a": "MOSI", 
-            "per_b": "", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 11
         }, 
         {
-            "pin": 12, 
-            "extra": "", 
             "signal": "PA15", 
-            "per_a": "SPCK", 
-            "per_b": "PWMH2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 12
         }, 
         {
-            "pin": 13, 
-            "extra": "WKUP5", 
             "signal": "PA16", 
-            "per_a": "NPCS0", 
-            "per_b": "NCS1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 13
         }, 
         {
-            "pin": 14, 
-            "extra": "WKUP6", 
             "signal": "PA17", 
-            "per_a": "SCK0", 
-            "per_b": "AD12BTRG", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 14
         }, 
         {
-            "pin": 15, 
-            "extra": "", 
             "signal": "PB16", 
-            "per_a": "D7", 
-            "per_b": "PWMH3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 15
         }, 
         {
-            "pin": 16, 
-            "extra": "", 
             "signal": "PB15", 
-            "per_a": "D6", 
-            "per_b": "PWMH2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 16
         }, 
         {
-            "pin": 17, 
-            "extra": "WKUP7", 
             "signal": "PA18", 
-            "per_a": "TXD0", 
-            "per_b": "PWMFI2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 17
         }, 
         {
-            "pin": 18, 
-            "extra": "WKUP8", 
             "signal": "PA19", 
-            "per_a": "RXD0", 
-            "per_b": "NPCS3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 18
         }, 
         {
-            "pin": 19, 
-            "extra": "WKUP9", 
             "signal": "PA20", 
-            "per_a": "TXD1", 
-            "per_b": "PWMH3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 19
         }, 
         {
-            "pin": 20, 
-            "extra": "WKUP10", 
             "signal": "PA21", 
-            "per_a": "RXD1", 
-            "per_b": "PCK0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 20
         }, 
         {
-            "pin": 21, 
-            "extra": "", 
             "signal": "PA23", 
-            "per_a": "RXD2", 
-            "per_b": "CTS1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 21
         }, 
         {
-            "pin": 22, 
-            "extra": "", 
             "signal": "VDDIO", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 22
         }, 
         {
-            "pin": 23, 
-            "extra": "WKUP11", 
             "signal": "PA24", 
-            "per_a": "TWD1", 
-            "per_b": "SCK1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 23
         }, 
         {
-            "pin": 24, 
-            "extra": "WKUP12", 
             "signal": "PA25", 
-            "per_a": "TWCK1", 
-            "per_b": "SCK2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 24
         }, 
         {
-            "pin": 25, 
-            "extra": "", 
             "signal": "PA26", 
-            "per_a": "TD", 
-            "per_b": "TCLK2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 25
         }, 
         {
-            "pin": 26, 
-            "extra": "WKUP0", 
             "signal": "PA0", 
-            "per_a": "TIOB0", 
-            "per_b": "NPCS1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 26
         }, 
         {
-            "pin": 27, 
-            "extra": "WKUP1", 
             "signal": "PA1", 
-            "per_a": "TIOA0", 
-            "per_b": "NPCS2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 27
         }, 
         {
-            "pin": 28, 
-            "extra": "WKUP2", 
             "signal": "PA2", 
-            "per_a": "TCLK0", 
-            "per_b": "ADTRG", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 28
         }, 
         {
-            "pin": 29, 
-            "extra": "", 
             "signal": "PA3", 
-            "per_a": "MCCK", 
-            "per_b": "PCK1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 29
         }, 
         {
-            "pin": 30, 
-            "extra": "", 
             "signal": "PA4", 
-            "per_a": "MCCDA", 
-            "per_b": "PWMH0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 30
         }, 
         {
-            "pin": 31, 
-            "extra": "", 
             "signal": "PA5", 
-            "per_a": "MCDA0", 
-            "per_b": "PWMH1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 31
         }, 
         {
-            "pin": 32, 
-            "extra": "", 
             "signal": "PA6", 
-            "per_a": "MCDA1", 
-            "per_b": "PWMH2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 32
         }, 
         {
-            "pin": 33, 
-            "extra": "", 
             "signal": "PA7", 
-            "per_a": "MCDA2", 
-            "per_b": "PWML0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 33
         }, 
         {
-            "pin": 34, 
-            "extra": "", 
             "signal": "VDDCORE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 34
         }, 
         {
-            "pin": 35, 
-            "extra": "", 
             "signal": "GND", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 35
         }, 
         {
-            "pin": 36, 
-            "extra": "", 
             "signal": "VDDIO", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 36
         }, 
         {
-            "pin": 37, 
-            "extra": "", 
             "signal": "PA8", 
-            "per_a": "MCDA3", 
-            "per_b": "PWML1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 37
         }, 
         {
-            "pin": 38, 
-            "extra": "WKUP3", 
             "signal": "PA9", 
-            "per_a": "TWD0", 
-            "per_b": "PWML2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 38
         }, 
         {
-            "pin": 39, 
-            "extra": "WKUP4", 
             "signal": "PA10", 
-            "per_a": "TWCK0", 
-            "per_b": "PWML3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 39
         }, 
         {
-            "pin": 40, 
-            "extra": "", 
             "signal": "PA11", 
-            "per_a": "URXD", 
-            "per_b": "PWMFI0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 40
         }, 
         {
-            "pin": 41, 
-            "extra": "", 
             "signal": "PA12", 
-            "per_a": "UTXD", 
-            "per_b": "PWMFI1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 41
         }, 
         {
-            "pin": 42, 
-            "extra": "", 
             "signal": "FWUP", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 42
         }, 
         {
-            "pin": 43, 
-            "extra": "", 
             "signal": "ERASE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 43
         }, 
         {
-            "pin": 44, 
-            "extra": "", 
             "signal": "TST", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 44
         }, 
         {
-            "pin": 45, 
-            "extra": "", 
             "signal": "VDDBU", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 45
         }, 
         {
-            "pin": 46, 
-            "extra": "", 
             "signal": "GNDBU", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 46
         }, 
         {
-            "pin": 47, 
-            "extra": "", 
             "signal": "NRSTB", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 47
         }, 
         {
-            "pin": 48, 
-            "extra": "", 
             "signal": "JTAGSEL", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 48
         }, 
         {
-            "pin": 49, 
-            "extra": "", 
             "signal": "XOUT32", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 49
         }, 
         {
-            "pin": 50, 
-            "extra": "", 
             "signal": "XIN32", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 50
         }, 
         {
-            "pin": 51, 
-            "extra": "", 
             "signal": "TDI", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 51
         }, 
         {
-            "pin": 52, 
-            "extra": "", 
             "signal": "VDDOUT", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 52
         }, 
         {
-            "pin": 53, 
-            "extra": "", 
             "signal": "VDDIN", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 53
         }, 
         {
-            "pin": 54, 
-            "extra": "", 
             "signal": "TDO", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "OUT"
+            "type": "OUT", 
+            "pin": 54
         }, 
         {
-            "pin": 55, 
-            "extra": "", 
             "signal": "TMS", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 55
         }, 
         {
-            "pin": 56, 
-            "extra": "", 
             "signal": "TCK", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 56
         }, 
         {
-            "pin": 57, 
-            "extra": "", 
             "signal": "NRST", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "IN"
+            "type": "IN", 
+            "pin": 57
         }, 
         {
-            "pin": 58, 
-            "extra": "", 
             "signal": "PB24", 
-            "per_a": "NANDRDY", 
-            "per_b": "PCK1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 58
         }, 
         {
-            "pin": 59, 
-            "extra": "", 
             "signal": "VDDCORE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 59
         }, 
         {
-            "pin": 60, 
-            "extra": "", 
             "signal": "VDDIO", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 60
         }, 
         {
-            "pin": 61, 
-            "extra": "", 
             "signal": "GND", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 61
         }, 
         {
-            "pin": 62, 
-            "extra": "", 
             "signal": "PB23", 
-            "per_a": "NWR0/NWE", 
-            "per_b": "PCK2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 62
         }, 
         {
-            "pin": 63, 
-            "extra": "", 
             "signal": "PB22", 
-            "per_a": "A22/NANDCLE", 
-            "per_b": "CTS2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 63
         }, 
         {
-            "pin": 64, 
-            "extra": "", 
             "signal": "PB21", 
-            "per_a": "A21/NANDALE", 
-            "per_b": "RTS2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 64
         }, 
         {
-            "pin": 65, 
-            "extra": "", 
             "signal": "PB20", 
-            "per_a": "NCS0", 
-            "per_b": "PWML3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 65
         }, 
         {
-            "pin": 66, 
-            "extra": "", 
             "signal": "PB19", 
-            "per_a": "NRD", 
-            "per_b": "PWML2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 66
         }, 
         {
-            "pin": 67, 
-            "extra": "", 
             "signal": "PB18", 
-            "per_a": "NANDWE", 
-            "per_b": "PWML1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 67
         }, 
         {
-            "pin": 68, 
-            "extra": "", 
             "signal": "PB17", 
-            "per_a": "NANDOE", 
-            "per_b": "PWML0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 68
         }, 
         {
-            "pin": 69, 
-            "extra": "", 
             "signal": "PB14", 
-            "per_a": "D5", 
-            "per_b": "PWMH1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 69
         }, 
         {
-            "pin": 70, 
-            "extra": "", 
             "signal": "PB10", 
-            "per_a": "D1", 
-            "per_b": "DSR0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 70
         }, 
         {
-            "pin": 71, 
-            "extra": "", 
             "signal": "PB9", 
-            "per_a": "D0", 
-            "per_b": "DTR0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 71
         }, 
         {
-            "pin": 72, 
-            "extra": "", 
             "signal": "GNDPLL", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 72
         }, 
         {
-            "pin": 73, 
-            "extra": "", 
             "signal": "VDDPLL", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 73
         }, 
         {
-            "pin": 74, 
-            "extra": "", 
             "signal": "XOUT", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 74
         }, 
         {
-            "pin": 75, 
-            "extra": "", 
             "signal": "XIN", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 75
         }, 
         {
-            "pin": 76, 
-            "extra": "", 
             "signal": "DHSDP", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 76
         }, 
         {
-            "pin": 77, 
-            "extra": "", 
             "signal": "DHSDM", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 77
         }, 
         {
-            "pin": 78, 
-            "extra": "", 
             "signal": "VBG", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 78
         }, 
         {
-            "pin": 79, 
-            "extra": "", 
             "signal": "VDDUTMI", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 79
         }, 
         {
-            "pin": 80, 
-            "extra": "", 
             "signal": "DFSDM", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 80
         }, 
         {
-            "pin": 81, 
-            "extra": "", 
             "signal": "DFSDP", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PAS"
+            "type": "PAS", 
+            "pin": 81
         }, 
         {
-            "pin": 82, 
-            "extra": "", 
             "signal": "GNDUTMI", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 82
         }, 
         {
-            "pin": 83, 
-            "extra": "", 
             "signal": "VDDCORE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 83
         }, 
         {
-            "pin": 84, 
-            "extra": "", 
             "signal": "PA28", 
-            "per_a": "TK", 
-            "per_b": "PWMH0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 84
         }, 
         {
-            "pin": 85, 
-            "extra": "", 
             "signal": "PA29", 
-            "per_a": "RK", 
-            "per_b": "PWMH1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 85
         }, 
         {
-            "pin": 86, 
-            "extra": "", 
             "signal": "PA31", 
-            "per_a": "RF", 
-            "per_b": "TIOB2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 86
         }, 
         {
-            "pin": 87, 
-            "extra": "", 
             "signal": "VDDCORE", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 87
         }, 
         {
-            "pin": 88, 
-            "extra": "", 
             "signal": "VDDIO", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 88
         }, 
         {
-            "pin": 89, 
-            "extra": "", 
             "signal": "GND", 
-            "per_a": "", 
-            "per_b": "", 
-            "type": "PWR"
+            "type": "PWR", 
+            "pin": 89
         }, 
         {
-            "pin": 90, 
-            "extra": "WKUP13", 
             "signal": "PB0", 
-            "per_a": "PWMH0", 
-            "per_b": "A2", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 90
         }, 
         {
-            "pin": 91, 
-            "extra": "WKUP14", 
             "signal": "PB1", 
-            "per_a": "PWMH1", 
-            "per_b": "A3", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 91
         }, 
         {
-            "pin": 92, 
-            "extra": "WKUP15", 
             "signal": "PB2", 
-            "per_a": "PWMH2", 
-            "per_b": "A4", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 92
         }, 
         {
-            "pin": 93, 
-            "extra": "", 
             "signal": "PB11", 
-            "per_a": "D2", 
-            "per_b": "DCD0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 93
         }, 
         {
-            "pin": 94, 
-            "extra": "", 
             "signal": "PB12", 
-            "per_a": "D3", 
-            "per_b": "RI0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 94
         }, 
         {
-            "pin": 95, 
-            "extra": "", 
             "signal": "PB13", 
-            "per_a": "D4", 
-            "per_b": "PWMH0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 95
         }, 
         {
-            "pin": 96, 
-            "extra": "", 
             "signal": "PA27", 
-            "per_a": "RD", 
-            "per_b": "PCK0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 96
         }, 
         {
-            "pin": 97, 
-            "extra": "AD0", 
             "signal": "PB5", 
-            "per_a": "TIOA1", 
-            "per_b": "A7", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 97
         }, 
         {
-            "pin": 98, 
-            "extra": "AD1", 
             "signal": "PB6", 
-            "per_a": "TIOB1", 
-            "per_b": "D15", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 98
         }, 
         {
-            "pin": 99, 
-            "extra": "AD2", 
             "signal": "PB7", 
-            "per_a": "RTS0", 
-            "per_b": "A0/NBS0", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 99
         }, 
         {
-            "pin": 100, 
-            "extra": "AD3", 
             "signal": "PB8", 
-            "per_a": "CTS0", 
-            "per_b": "A1", 
-            "type": "IO"
+            "type": "IO", 
+            "pin": 100
+        }
+    ], 
+    "peripherals": [
+        {
+            "signals": [
+                {
+                    "signal": "PB5", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD0", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "PB6", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD1", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "PB7", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD2", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "PB8", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD3", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "PA2", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "ADTRG", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "ADVREF", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "ADVREF", 
+                    "peripheral": "ADC"
+                }, 
+                {
+                    "signal": "AD12BVREF", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "AD12BVREF", 
+                    "peripheral": "ADC"
+                }
+            ], 
+            "name": "ADC"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA22", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD12B0", 
+                    "peripheral": "ADC12B"
+                }, 
+                {
+                    "signal": "PA30", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD12B1", 
+                    "peripheral": "ADC12B"
+                }, 
+                {
+                    "signal": "PB3", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD12B2", 
+                    "peripheral": "ADC12B"
+                }, 
+                {
+                    "signal": "PB4", 
+                    "alternate": "E", 
+                    "direction": "A", 
+                    "name": "AD12B3", 
+                    "peripheral": "ADC12B"
+                }, 
+                {
+                    "signal": "PA17", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "AD12BTRG", 
+                    "peripheral": "ADC12B"
+                }
+            ], 
+            "name": "ADC12B"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "XOUT32", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "XOUT32", 
+                    "peripheral": "Clock"
+                }, 
+                {
+                    "signal": "XIN32", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "XIN32", 
+                    "peripheral": "Clock"
+                }, 
+                {
+                    "signal": "XOUT", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "XOUT", 
+                    "peripheral": "Clock"
+                }, 
+                {
+                    "signal": "XIN", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "XIN", 
+                    "peripheral": "Clock"
+                }
+            ], 
+            "name": "Clock"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PB7", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A0/NBS0", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB8", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A1", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB0", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A2", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB21", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "A21/NANDALE", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB22", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "A22/NANDCLE", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB1", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A3", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB2", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A4", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB3", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A5", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB4", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A6", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB5", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "A7", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB9", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D0", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB10", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D1", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB6", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "D15", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB11", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D2", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB12", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D3", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB13", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D4", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB14", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D5", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB15", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D6", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB16", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "D7", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB17", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "NANDOE", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB24", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "NANDRDY", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB18", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "NANDWE", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB20", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "NCS0", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PA16", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "NCS1", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB19", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "NRD", 
+                    "peripheral": "EBI"
+                }, 
+                {
+                    "signal": "PB23", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "NWR0/NWE", 
+                    "peripheral": "EBI"
+                }
+            ], 
+            "name": "EBI"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA4", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCCDA", 
+                    "peripheral": "HSMCI"
+                }, 
+                {
+                    "signal": "PA3", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCCK", 
+                    "peripheral": "HSMCI"
+                }, 
+                {
+                    "signal": "PA5", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCDA0", 
+                    "peripheral": "HSMCI"
+                }, 
+                {
+                    "signal": "PA6", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCDA1", 
+                    "peripheral": "HSMCI"
+                }, 
+                {
+                    "signal": "PA7", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCDA2", 
+                    "peripheral": "HSMCI"
+                }, 
+                {
+                    "signal": "PA8", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MCDA3", 
+                    "peripheral": "HSMCI"
+                }
+            ], 
+            "name": "HSMCI"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "TDI", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "TDI", 
+                    "peripheral": "JTAG"
+                }, 
+                {
+                    "signal": "TDO", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "TDO", 
+                    "peripheral": "JTAG"
+                }, 
+                {
+                    "signal": "TMS", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "TMS", 
+                    "peripheral": "JTAG"
+                }, 
+                {
+                    "signal": "TCK", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "TCK", 
+                    "peripheral": "JTAG"
+                }, 
+                {
+                    "signal": "NRST", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "NRST", 
+                    "peripheral": "JTAG"
+                }
+            ], 
+            "name": "JTAG"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA21", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PCK0", 
+                    "peripheral": "PMC"
+                }, 
+                {
+                    "signal": "PA3", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PCK1", 
+                    "peripheral": "PMC"
+                }, 
+                {
+                    "signal": "PB23", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PCK2", 
+                    "peripheral": "PMC"
+                }
+            ], 
+            "name": "PMC"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA11", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "PWMFI0", 
+                    "peripheral": "PWM0"
+                }, 
+                {
+                    "signal": "PB0", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "PWMH0", 
+                    "peripheral": "PWM0"
+                }, 
+                {
+                    "signal": "PA7", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PWML0", 
+                    "peripheral": "PWM0"
+                }
+            ], 
+            "name": "PWM0"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA12", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "PWMFI1", 
+                    "peripheral": "PWM1"
+                }, 
+                {
+                    "signal": "PB1", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "PWMH1", 
+                    "peripheral": "PWM1"
+                }, 
+                {
+                    "signal": "PA8", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PWML1", 
+                    "peripheral": "PWM1"
+                }
+            ], 
+            "name": "PWM1"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA18", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "PWMFI2", 
+                    "peripheral": "PWM2"
+                }, 
+                {
+                    "signal": "PB2", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "PWMH2", 
+                    "peripheral": "PWM2"
+                }, 
+                {
+                    "signal": "PA9", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PWML2", 
+                    "peripheral": "PWM2"
+                }
+            ], 
+            "name": "PWM2"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PB3", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "PWMH3", 
+                    "peripheral": "PWM3"
+                }, 
+                {
+                    "signal": "PA10", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "PWML3", 
+                    "peripheral": "PWM3"
+                }
+            ], 
+            "name": "PWM3"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "VDDANA", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "VDDANA", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "GNDANA", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "GNDANA", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDCORE", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "VDDCORE", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDIO", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "VDDIO", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "GND", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "GND", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDBU", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "VDDBU", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "GNDBU", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "GNDBU", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDOUT", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "VDDOUT", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDIN", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "VDDIN", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "GNDPLL", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "GNDPLL", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDPLL", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "VDDPLL", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "VDDUTMI", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "VDDUTMI", 
+                    "peripheral": "Power"
+                }, 
+                {
+                    "signal": "GNDUTMI", 
+                    "alternate": "", 
+                    "direction": "P", 
+                    "name": "GNDUTMI", 
+                    "peripheral": "Power"
+                }
+            ], 
+            "name": "Power"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA13", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MISO", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA14", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "MOSI", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA16", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "NPCS0", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA0", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "NPCS1", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA1", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "NPCS2", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA19", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "NPCS3", 
+                    "peripheral": "SPI"
+                }, 
+                {
+                    "signal": "PA15", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "SPCK", 
+                    "peripheral": "SPI"
+                }
+            ], 
+            "name": "SPI"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA27", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "RD", 
+                    "peripheral": "SSR"
+                }, 
+                {
+                    "signal": "PA31", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "RF", 
+                    "peripheral": "SSR"
+                }, 
+                {
+                    "signal": "PA29", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "RK", 
+                    "peripheral": "SSR"
+                }, 
+                {
+                    "signal": "PA26", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "TD", 
+                    "peripheral": "SSR"
+                }, 
+                {
+                    "signal": "PA30", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TF", 
+                    "peripheral": "SSR"
+                }, 
+                {
+                    "signal": "PA28", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TK", 
+                    "peripheral": "SSR"
+                }
+            ], 
+            "name": "SSR"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA0", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP0", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA1", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP1", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA21", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP10", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA24", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP11", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA25", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP12", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PB0", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP13", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PB1", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP14", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PB2", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP15", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA2", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP2", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA9", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP3", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA10", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP4", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA16", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP5", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA17", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP6", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA18", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP7", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA19", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP8", 
+                    "peripheral": "SUPC"
+                }, 
+                {
+                    "signal": "PA20", 
+                    "alternate": "E", 
+                    "direction": "I", 
+                    "name": "WKUP9", 
+                    "peripheral": "SUPC"
+                }
+            ], 
+            "name": "SUPC"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "FWUP", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "FWUP", 
+                    "peripheral": "Special"
+                }, 
+                {
+                    "signal": "ERASE", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "ERASE", 
+                    "peripheral": "Special"
+                }, 
+                {
+                    "signal": "TST", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "TST", 
+                    "peripheral": "Special"
+                }, 
+                {
+                    "signal": "NRSTB", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "NRSTB", 
+                    "peripheral": "Special"
+                }, 
+                {
+                    "signal": "JTAGSEL", 
+                    "alternate": "", 
+                    "direction": "", 
+                    "name": "JTAGSEL", 
+                    "peripheral": "Special"
+                }
+            ], 
+            "name": "Special"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA2", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "TCLK0", 
+                    "peripheral": "TC0"
+                }, 
+                {
+                    "signal": "PA1", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TIOA0", 
+                    "peripheral": "TC0"
+                }, 
+                {
+                    "signal": "PA0", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TIOB0", 
+                    "peripheral": "TC0"
+                }
+            ], 
+            "name": "TC0"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PB4", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "TCLK1", 
+                    "peripheral": "TC1"
+                }, 
+                {
+                    "signal": "PB5", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TIOA1", 
+                    "peripheral": "TC1"
+                }, 
+                {
+                    "signal": "PB6", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TIOB1", 
+                    "peripheral": "TC1"
+                }
+            ], 
+            "name": "TC1"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA26", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "TCLK2", 
+                    "peripheral": "TC2"
+                }, 
+                {
+                    "signal": "PA30", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "TIOA2", 
+                    "peripheral": "TC2"
+                }, 
+                {
+                    "signal": "PA31", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "TIOB2", 
+                    "peripheral": "TC2"
+                }
+            ], 
+            "name": "TC2"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA10", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TWCK0", 
+                    "peripheral": "TWI0"
+                }, 
+                {
+                    "signal": "PA9", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TWD0", 
+                    "peripheral": "TWI0"
+                }
+            ], 
+            "name": "TWI0"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA25", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TWCK1", 
+                    "peripheral": "TWI1"
+                }, 
+                {
+                    "signal": "PA24", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TWD1", 
+                    "peripheral": "TWI1"
+                }
+            ], 
+            "name": "TWI1"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA11", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "URXD", 
+                    "peripheral": "UART"
+                }, 
+                {
+                    "signal": "PA12", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "UTXD", 
+                    "peripheral": "UART"
+                }
+            ], 
+            "name": "UART"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PB8", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "CTS0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PB11", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "DCD0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PB10", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "DSR0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PB9", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "DTR0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PB12", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "RI0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PB7", 
+                    "alternate": "A", 
+                    "direction": "O", 
+                    "name": "RTS0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PA19", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "RXD0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PA17", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "SCK0", 
+                    "peripheral": "USART0"
+                }, 
+                {
+                    "signal": "PA18", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TXD0", 
+                    "peripheral": "USART0"
+                }
+            ], 
+            "name": "USART0"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PA23", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "CTS1", 
+                    "peripheral": "USART1"
+                }, 
+                {
+                    "signal": "PA22", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "RTS1", 
+                    "peripheral": "USART1"
+                }, 
+                {
+                    "signal": "PA21", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "RXD1", 
+                    "peripheral": "USART1"
+                }, 
+                {
+                    "signal": "PA24", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "SCK1", 
+                    "peripheral": "USART1"
+                }, 
+                {
+                    "signal": "PA20", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TXD1", 
+                    "peripheral": "USART1"
+                }
+            ], 
+            "name": "USART1"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "PB22", 
+                    "alternate": "B", 
+                    "direction": "I", 
+                    "name": "CTS2", 
+                    "peripheral": "USART2"
+                }, 
+                {
+                    "signal": "PB21", 
+                    "alternate": "B", 
+                    "direction": "O", 
+                    "name": "RTS2", 
+                    "peripheral": "USART2"
+                }, 
+                {
+                    "signal": "PA23", 
+                    "alternate": "A", 
+                    "direction": "I", 
+                    "name": "RXD2", 
+                    "peripheral": "USART2"
+                }, 
+                {
+                    "signal": "PA25", 
+                    "alternate": "B", 
+                    "direction": "IO", 
+                    "name": "SCK2", 
+                    "peripheral": "USART2"
+                }, 
+                {
+                    "signal": "PA22", 
+                    "alternate": "A", 
+                    "direction": "IO", 
+                    "name": "TXD2", 
+                    "peripheral": "USART2"
+                }
+            ], 
+            "name": "USART2"
+        }, 
+        {
+            "signals": [
+                {
+                    "signal": "DHSDP", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "DHSDP", 
+                    "peripheral": "USB"
+                }, 
+                {
+                    "signal": "DHSDM", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "DHSDM", 
+                    "peripheral": "USB"
+                }, 
+                {
+                    "signal": "VBG", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "VBG", 
+                    "peripheral": "USB"
+                }, 
+                {
+                    "signal": "DFSDM", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "DFSDM", 
+                    "peripheral": "USB"
+                }, 
+                {
+                    "signal": "DFSDP", 
+                    "alternate": "", 
+                    "direction": "A", 
+                    "name": "DFSDP", 
+                    "peripheral": "USB"
+                }
+            ], 
+            "name": "USB"
         }
     ], 
     "n_pins": 100, 

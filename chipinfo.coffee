@@ -14,7 +14,22 @@ chart = d3.select(viewSection)
 d3.json "sam3u-lqfp100.json", (json) ->
 	drawChip(json)
 		
-drawChip = (data) ->	
+drawChip = (data) ->
+	
+	# Do some cross-linking that can't be represented in the JSON
+	pinsBySignal = {}
+	
+	for pin in data.pins
+		pinsBySignal[pin.signal] = pin
+		pin.functions = []
+		
+	console.log(pinsBySignal)
+	
+	for peripheral in data.peripherals
+		for signal in peripheral.signals
+			pin = pinsBySignal[signal.signal]
+			if pin? then pin.functions.push(signal)
+	
 	zoom = 2
 	cx = w/2
 	cy = h/2
@@ -42,51 +57,91 @@ drawChip = (data) ->
 			.attr('r',  0.03)
 			.attr('fill', 'rgba(255, 255, 255, 0.5)')
 			
-	chip.selectAll('rect.pin')
+	pins = chip.selectAll('rect.pin')
 			.data(data.pins)
 			.enter().append("svg:rect")
-				 .attr('class', 'pin')
-				 .attr('data-pin', (d)->d.pin)
-				 .attr('fill', (d) -> 
-				 	if d.type == 'PWR' then '#66aa88'
-				 	else if not /P[AB]/.test(d.signal) then '#6688aa'
-				 	else '#666666'
-				 )
-				 .attr('width', p.rangeBand())
-				 .attr('height', 0.08)
-				 .attr('x', (d)->p((d.pin-1)%25+1))
-				 .attr('y', -0.08)
-				 .attr('transform', (d)->"rotate(#{Math.floor((d.pin-1)/25)*90}, 0.5, 0.5)")
-				 .on('mouseover', (d) ->
-				 	d3.select(this).classed('selected', true)
+				.attr('class', 'pin')
+				.attr('data-pin', (d)->d.pin)
+				.attr('fill', (d) -> 
+					if d.type == 'PWR' then '#66aa88'
+					else if not /P[AB]/.test(d.signal) then '#6688aa'
+					else '#666666'
+				)
+				.attr('width', p.rangeBand())
+				.attr('height', 0.08)
+				.attr('x', (d)->p((d.pin-1)%25+1))
+				.attr('y', -0.08)
+				.attr('transform', (d)->"rotate(#{Math.floor((d.pin-1)/25)*90}, 0.5, 0.5)")
+				.on('mouseover', (d) -> pinSelect(d.signal, d.pin))
+				.on('mouseout', -> pinDeselect())
+	
+	tooltip = null
+	
+	pinSelect = (signal, pinno) ->
+		rects = pins.filter((d) -> d.signal == signal)
+		rects.classed('selected', true)
+		
+		d = pinsBySignal[signal]
+		pinno ?= d.pin
 				 	
-				 	angle = (Math.floor((d.pin-1)/25)*90 + rotate - 90)
-				 	xv = Math.cos(angle * (Math.PI / 180))
-				 	yv = Math.sin(angle * (Math.PI / 180))
-				 	
-				 	ttx = w/2 + xv*cs
-				 	tty = h/2 + yv*cs
-				 	
-				 	tooltip = d3.select(viewSection).append("div")
-				 		.attr('class', 'pin-tooltip')
-				 		.style('left', "#{ttx}px")
-				 		.style('top', "#{tty}px")
-				 		
-				 	tooltip.append('h1')
-				 		.text("Pin #{d.pin} - #{d.signal}")
-				 	
-				 	tooltip.append('div').text("A: #{d.per_a}") if d.per_a
-				 	tooltip.append('div').text("B: #{d.per_b}") if d.per_b
-				 	tooltip.append('div').text("#{d.extra}") if d.extra
-				 		
-				 	d.tooltip = tooltip	
-				 )
-				 .on('mouseout', (d) ->
-				 	d3.select(this).classed('selected', false)
-				 	
-				 	d.tooltip
-				 		.style('-webkit-animation', 'fadeOut 300ms ease 100ms')
-				 		.on('webkitAnimationEnd', -> d3.select(this).remove())
-				 	
-				 	delete d.tooltip
-				 )
+		angle = (Math.floor((pinno-1)/25)*90 + rotate - 90)
+		xv = Math.cos(angle * (Math.PI / 180))
+		yv = Math.sin(angle * (Math.PI / 180))
+
+		ttx = w/2 + xv*cs
+		tty = h/2 + yv*cs
+
+		tooltip = d3.select(viewSection).append("div")
+			.attr('class', 'pin-tooltip')
+			.style('left', "#{ttx}px")
+			.style('top', "#{tty}px")
+	
+		tooltip.append('h1')
+			.text("Pin #{d.pin} - #{d.signal}")
+
+		for fn in d.functions
+			af = if fn.alternate then " (#{fn.alternate})" else ''
+			tooltip.append('div').text(fn.name+af)
+	
+
+	pinDeselect = ->
+		console.log('desel', tooltip)
+		rects = pins.filter('.selected')
+		rects.classed('selected', false)
+			
+		if tooltip
+			tooltip
+				.style('-webkit-animation', 'fadeOut 300ms ease 100ms')
+				.on('webkitAnimationEnd', -> d3.select(this).remove())
+
+			tooltip = null
+
+	signalsSelect = (signals) ->
+		rects = pins.filter((d) -> d.signal in signals)
+		rects.classed('selected', true)
+
+	side = document.getElementById('side')
+	peripheral_list = d3.select(side)
+	
+	console.log(side, peripheral_list)
+	
+	peripheral_div = peripheral_list.selectAll('div.peripheral')
+		.data(data.peripherals)
+		.enter().append('div')
+			.attr('class', 'peripheral')
+			
+	peripheral_div.append('h1')
+		.text((d) -> d.name)
+		.on('mouseover', (d) ->
+			signalsSelect(s.signal for s in d.signals)
+		)
+		.on('mouseout', pinDeselect)
+		
+	peripheral_div.selectAll('div.signal')
+		.data((d) -> d.signals)
+		.enter().append('div')
+			.attr('class', 'signal')
+			.text((d) -> d.name)
+			.on('mouseover', (d) -> pinSelect(d.signal))
+			.on('mouseout', pinDeselect)
+			
