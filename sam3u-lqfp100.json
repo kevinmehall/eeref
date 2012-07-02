@@ -1,0 +1,807 @@
+{
+    "pins": [
+        {
+            "pin": 1, 
+            "extra": "", 
+            "signal": "VDDANA", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 2, 
+            "extra": "", 
+            "signal": "ADVREF", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 3, 
+            "extra": "", 
+            "signal": "GNDANA", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 4, 
+            "extra": "", 
+            "signal": "AD12BVREF", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 5, 
+            "extra": "AD12B0", 
+            "signal": "PA22", 
+            "per_a": "TXD2", 
+            "per_b": "RTS1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 6, 
+            "extra": "AD12B1", 
+            "signal": "PA30", 
+            "per_a": "TF", 
+            "per_b": "TIOA2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 7, 
+            "extra": "AD12B2", 
+            "signal": "PB3", 
+            "per_a": "PWMH3", 
+            "per_b": "A5", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 8, 
+            "extra": "AD12B3", 
+            "signal": "PB4", 
+            "per_a": "TCLK1", 
+            "per_b": "A6", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 9, 
+            "extra": "", 
+            "signal": "VDDCORE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 10, 
+            "extra": "", 
+            "signal": "PA13", 
+            "per_a": "MISO", 
+            "per_b": "", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 11, 
+            "extra": "", 
+            "signal": "PA14", 
+            "per_a": "MOSI", 
+            "per_b": "", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 12, 
+            "extra": "", 
+            "signal": "PA15", 
+            "per_a": "SPCK", 
+            "per_b": "PWMH2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 13, 
+            "extra": "WKUP5", 
+            "signal": "PA16", 
+            "per_a": "NPCS0", 
+            "per_b": "NCS1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 14, 
+            "extra": "WKUP6", 
+            "signal": "PA17", 
+            "per_a": "SCK0", 
+            "per_b": "AD12BTRG", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 15, 
+            "extra": "", 
+            "signal": "PB16", 
+            "per_a": "D7", 
+            "per_b": "PWMH3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 16, 
+            "extra": "", 
+            "signal": "PB15", 
+            "per_a": "D6", 
+            "per_b": "PWMH2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 17, 
+            "extra": "WKUP7", 
+            "signal": "PA18", 
+            "per_a": "TXD0", 
+            "per_b": "PWMFI2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 18, 
+            "extra": "WKUP8", 
+            "signal": "PA19", 
+            "per_a": "RXD0", 
+            "per_b": "NPCS3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 19, 
+            "extra": "WKUP9", 
+            "signal": "PA20", 
+            "per_a": "TXD1", 
+            "per_b": "PWMH3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 20, 
+            "extra": "WKUP10", 
+            "signal": "PA21", 
+            "per_a": "RXD1", 
+            "per_b": "PCK0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 21, 
+            "extra": "", 
+            "signal": "PA23", 
+            "per_a": "RXD2", 
+            "per_b": "CTS1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 22, 
+            "extra": "", 
+            "signal": "VDDIO", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 23, 
+            "extra": "WKUP11", 
+            "signal": "PA24", 
+            "per_a": "TWD1", 
+            "per_b": "SCK1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 24, 
+            "extra": "WKUP12", 
+            "signal": "PA25", 
+            "per_a": "TWCK1", 
+            "per_b": "SCK2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 25, 
+            "extra": "", 
+            "signal": "PA26", 
+            "per_a": "TD", 
+            "per_b": "TCLK2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 26, 
+            "extra": "WKUP0", 
+            "signal": "PA0", 
+            "per_a": "TIOB0", 
+            "per_b": "NPCS1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 27, 
+            "extra": "WKUP1", 
+            "signal": "PA1", 
+            "per_a": "TIOA0", 
+            "per_b": "NPCS2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 28, 
+            "extra": "WKUP2", 
+            "signal": "PA2", 
+            "per_a": "TCLK0", 
+            "per_b": "ADTRG", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 29, 
+            "extra": "", 
+            "signal": "PA3", 
+            "per_a": "MCCK", 
+            "per_b": "PCK1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 30, 
+            "extra": "", 
+            "signal": "PA4", 
+            "per_a": "MCCDA", 
+            "per_b": "PWMH0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 31, 
+            "extra": "", 
+            "signal": "PA5", 
+            "per_a": "MCDA0", 
+            "per_b": "PWMH1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 32, 
+            "extra": "", 
+            "signal": "PA6", 
+            "per_a": "MCDA1", 
+            "per_b": "PWMH2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 33, 
+            "extra": "", 
+            "signal": "PA7", 
+            "per_a": "MCDA2", 
+            "per_b": "PWML0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 34, 
+            "extra": "", 
+            "signal": "VDDCORE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 35, 
+            "extra": "", 
+            "signal": "GND", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 36, 
+            "extra": "", 
+            "signal": "VDDIO", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 37, 
+            "extra": "", 
+            "signal": "PA8", 
+            "per_a": "MCDA3", 
+            "per_b": "PWML1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 38, 
+            "extra": "WKUP3", 
+            "signal": "PA9", 
+            "per_a": "TWD0", 
+            "per_b": "PWML2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 39, 
+            "extra": "WKUP4", 
+            "signal": "PA10", 
+            "per_a": "TWCK0", 
+            "per_b": "PWML3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 40, 
+            "extra": "", 
+            "signal": "PA11", 
+            "per_a": "URXD", 
+            "per_b": "PWMFI0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 41, 
+            "extra": "", 
+            "signal": "PA12", 
+            "per_a": "UTXD", 
+            "per_b": "PWMFI1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 42, 
+            "extra": "", 
+            "signal": "FWUP", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 43, 
+            "extra": "", 
+            "signal": "ERASE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 44, 
+            "extra": "", 
+            "signal": "TST", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 45, 
+            "extra": "", 
+            "signal": "VDDBU", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 46, 
+            "extra": "", 
+            "signal": "GNDBU", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 47, 
+            "extra": "", 
+            "signal": "NRSTB", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 48, 
+            "extra": "", 
+            "signal": "JTAGSEL", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 49, 
+            "extra": "", 
+            "signal": "XOUT32", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 50, 
+            "extra": "", 
+            "signal": "XIN32", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 51, 
+            "extra": "", 
+            "signal": "TDI", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 52, 
+            "extra": "", 
+            "signal": "VDDOUT", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 53, 
+            "extra": "", 
+            "signal": "VDDIN", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 54, 
+            "extra": "", 
+            "signal": "TDO", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "OUT"
+        }, 
+        {
+            "pin": 55, 
+            "extra": "", 
+            "signal": "TMS", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 56, 
+            "extra": "", 
+            "signal": "TCK", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 57, 
+            "extra": "", 
+            "signal": "NRST", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "IN"
+        }, 
+        {
+            "pin": 58, 
+            "extra": "", 
+            "signal": "PB24", 
+            "per_a": "NANDRDY", 
+            "per_b": "PCK1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 59, 
+            "extra": "", 
+            "signal": "VDDCORE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 60, 
+            "extra": "", 
+            "signal": "VDDIO", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 61, 
+            "extra": "", 
+            "signal": "GND", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 62, 
+            "extra": "", 
+            "signal": "PB23", 
+            "per_a": "NWR0/NWE", 
+            "per_b": "PCK2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 63, 
+            "extra": "", 
+            "signal": "PB22", 
+            "per_a": "A22/NANDCLE", 
+            "per_b": "CTS2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 64, 
+            "extra": "", 
+            "signal": "PB21", 
+            "per_a": "A21/NANDALE", 
+            "per_b": "RTS2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 65, 
+            "extra": "", 
+            "signal": "PB20", 
+            "per_a": "NCS0", 
+            "per_b": "PWML3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 66, 
+            "extra": "", 
+            "signal": "PB19", 
+            "per_a": "NRD", 
+            "per_b": "PWML2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 67, 
+            "extra": "", 
+            "signal": "PB18", 
+            "per_a": "NANDWE", 
+            "per_b": "PWML1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 68, 
+            "extra": "", 
+            "signal": "PB17", 
+            "per_a": "NANDOE", 
+            "per_b": "PWML0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 69, 
+            "extra": "", 
+            "signal": "PB14", 
+            "per_a": "D5", 
+            "per_b": "PWMH1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 70, 
+            "extra": "", 
+            "signal": "PB10", 
+            "per_a": "D1", 
+            "per_b": "DSR0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 71, 
+            "extra": "", 
+            "signal": "PB9", 
+            "per_a": "D0", 
+            "per_b": "DTR0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 72, 
+            "extra": "", 
+            "signal": "GNDPLL", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 73, 
+            "extra": "", 
+            "signal": "VDDPLL", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 74, 
+            "extra": "", 
+            "signal": "XOUT", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 75, 
+            "extra": "", 
+            "signal": "XIN", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 76, 
+            "extra": "", 
+            "signal": "DHSDP", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 77, 
+            "extra": "", 
+            "signal": "DHSDM", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 78, 
+            "extra": "", 
+            "signal": "VBG", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 79, 
+            "extra": "", 
+            "signal": "VDDUTMI", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 80, 
+            "extra": "", 
+            "signal": "DFSDM", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 81, 
+            "extra": "", 
+            "signal": "DFSDP", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PAS"
+        }, 
+        {
+            "pin": 82, 
+            "extra": "", 
+            "signal": "GNDUTMI", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 83, 
+            "extra": "", 
+            "signal": "VDDCORE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 84, 
+            "extra": "", 
+            "signal": "PA28", 
+            "per_a": "TK", 
+            "per_b": "PWMH0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 85, 
+            "extra": "", 
+            "signal": "PA29", 
+            "per_a": "RK", 
+            "per_b": "PWMH1", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 86, 
+            "extra": "", 
+            "signal": "PA31", 
+            "per_a": "RF", 
+            "per_b": "TIOB2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 87, 
+            "extra": "", 
+            "signal": "VDDCORE", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 88, 
+            "extra": "", 
+            "signal": "VDDIO", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 89, 
+            "extra": "", 
+            "signal": "GND", 
+            "per_a": "", 
+            "per_b": "", 
+            "type": "PWR"
+        }, 
+        {
+            "pin": 90, 
+            "extra": "WKUP13", 
+            "signal": "PB0", 
+            "per_a": "PWMH0", 
+            "per_b": "A2", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 91, 
+            "extra": "WKUP14", 
+            "signal": "PB1", 
+            "per_a": "PWMH1", 
+            "per_b": "A3", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 92, 
+            "extra": "WKUP15", 
+            "signal": "PB2", 
+            "per_a": "PWMH2", 
+            "per_b": "A4", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 93, 
+            "extra": "", 
+            "signal": "PB11", 
+            "per_a": "D2", 
+            "per_b": "DCD0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 94, 
+            "extra": "", 
+            "signal": "PB12", 
+            "per_a": "D3", 
+            "per_b": "RI0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 95, 
+            "extra": "", 
+            "signal": "PB13", 
+            "per_a": "D4", 
+            "per_b": "PWMH0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 96, 
+            "extra": "", 
+            "signal": "PA27", 
+            "per_a": "RD", 
+            "per_b": "PCK0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 97, 
+            "extra": "AD0", 
+            "signal": "PB5", 
+            "per_a": "TIOA1", 
+            "per_b": "A7", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 98, 
+            "extra": "AD1", 
+            "signal": "PB6", 
+            "per_a": "TIOB1", 
+            "per_b": "D15", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 99, 
+            "extra": "AD2", 
+            "signal": "PB7", 
+            "per_a": "RTS0", 
+            "per_b": "A0/NBS0", 
+            "type": "IO"
+        }, 
+        {
+            "pin": 100, 
+            "extra": "AD3", 
+            "signal": "PB8", 
+            "per_a": "CTS0", 
+            "per_b": "A1", 
+            "type": "IO"
+        }
+    ], 
+    "n_pins": 100, 
+    "name": "sam3u", 
+    "package": "qfp"
+}
