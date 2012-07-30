@@ -1,5 +1,6 @@
 import re
 import pprint
+import itertools
 
 info = map(lambda tlist: \
 	map(lambda item: \
@@ -21,4 +22,26 @@ split = lambda lst: \
 			lst), \
 	pairify(cutPoints(lst))[1::])
 
-pprint.pprint(map(split, info))
+table = map(split, info)
+
+heirarchical = map(lambda lst: \
+	dict( \
+		map(lambda lst: \
+			(lst[0], lst[1::]), \
+		lst) ), \
+	table)
+
+ports = map(lambda lst2: \
+	map(lambda lst: \
+		dict(zip(lst2.keys(), lst)), \
+	zip(*lst2.values())), \
+	heirarchical)
+
+_flatten = lambda lst: \
+	list( \
+		itertools.chain( \
+			*[[item] if type(item) not in [list, dict] else item for item in lst]))
+
+pins = _flatten(ports)
+
+pprint.pprint(pins)
