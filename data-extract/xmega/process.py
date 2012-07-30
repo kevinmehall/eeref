@@ -1,6 +1,5 @@
 import re
 import pprint
-import itertools
 
 info = map(lambda tlist: \
 	map(lambda item: \
@@ -37,11 +36,6 @@ ports = map(lambda lst2: \
 	zip(*lst2.values())), \
 	heirarchical)
 
-_flatten = lambda lst: \
-	list( \
-		itertools.chain( \
-			*[[item] if type(item) not in [list, dict] else item for item in lst]))
-
-pins = _flatten(ports)
+pins = sum(ports, [])
 
 pprint.pprint(pins)
