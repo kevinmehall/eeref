@@ -8,6 +8,7 @@
  PA4       44         SYNC           ADC4                        ADC4           AC4
  PA5       1          SYNC           ADC5                        ADC5           AC5           AC5
  PA6       2          SYNC           ADC6                        ADC6           AC6                        AC1OUT
+ PA7       3          SYNC           ADC7                        ADC7           AC7                        AC0OUT
 
  PORT B     PIN       INTERRUPT                ADCA POS/GAINPO                  DACB                                REFB
  PB0        4         SYNC                     ADC8                                                                 AREF
