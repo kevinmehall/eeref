@@ -1,0 +1,15 @@
+{
+  "name": "datasheet",
+  "description": "datasheet",
+  "dependencies": {
+    "component/d3": "*",
+    "component/jquery": "*"
+  },
+  "development": {},
+  "scripts": [
+    "client/index.js"
+  ],
+  "styles": [
+    "client/datasheet.css"
+  ]
+}

@@ -1,18 +1,25 @@
+$ = require 'jquery'
+d3 = (require 'd3')()
 
-viewSection = document.getElementById('view')
-w = viewSection.clientWidth
-h = viewSection.clientHeight
+w = h = 0
+viewSection = null
+chart = null
 
-console.log(viewSection, w,h)
+$ ->
+	viewSection = document.getElementById('view')
+	w = viewSection.clientWidth
+	h = viewSection.clientHeight
 
-chart = d3.select(viewSection)
-	.append("svg:svg")
-		.attr("class", "chart")
-		.attr("width", w)
-		.attr("height", h)
-		
-d3.json "sam3u-lqfp100.json", (json) ->
-	drawChip(json)
+	console.log(viewSection, w,h)
+
+	chart = d3.select(viewSection)
+		.append("svg:svg")
+			.attr("class", "chart")
+			.attr("width", w)
+			.attr("height", h)
+			
+	d3.json "sam3u-lqfp100.json", (json) ->
+		drawChip(json)
 		
 drawChip = (data) ->
 	

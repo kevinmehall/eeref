@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<script src='d3.v2.js'></script>
-<script src='coffee-script.js'></script>
-
-<script type='text/coffeescript' src='chipinfo.coffee'></script>
-
-<style>
 body, html{
 	margin: 0;
 	padding: 0;
@@ -88,22 +79,3 @@ body, html{
 	margin: 0 8px;
 	cursor: pointer;
 }
-
-
-
-
-</style>
-
-</head>
-<body>
-
-<section id='view'>
-
-</section>
-
-<section id='side'>
-
-</section>
-
-</body>
-</html>
