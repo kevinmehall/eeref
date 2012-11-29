@@ -1,22 +1,19 @@
 $ = require 'jquery'
 d3 = (require 'd3')()
 
-w = h = 0
-viewSection = null
+window.d3 = d3   
+
+pkg =
+	tqfp: require('./tqfp')
+
 chart = null
 
 $ ->
-	viewSection = document.getElementById('view')
-	w = viewSection.clientWidth
-	h = viewSection.clientHeight
-
-	console.log(viewSection, w,h)
-
-	chart = d3.select(viewSection)
+	chart = d3.select('#view')
 		.append("svg:svg")
 			.attr("class", "chart")
-			.attr("width", w)
-			.attr("height", h)
+			.attr("width", '100%')
+			.attr("height", '100%')
 			
 	d3.json "sam3u-lqfp100.json", (json) ->
 		drawChip(json)
@@ -25,73 +22,42 @@ drawChip = (data) ->
 	
 	# Do some cross-linking that can't be represented in the JSON
 	pinsBySignal = {}
-	
+	signalsByPin = {}
 	for pin in data.pins
 		pinsBySignal[pin.signal] = pin
+		signalsByPin[pin.pin] = pin
 		pin.functions = []
-		
-	console.log(pinsBySignal)
 	
 	for peripheral in data.peripherals
 		for signal in peripheral.signals
 			pin = pinsBySignal[signal.signal]
 			if pin? then pin.functions.push(signal)
-	
-	zoom = 2
-	cx = w/2
-	cy = h/2
-	cs = Math.min(w, h)/zoom
-	rotate = -45
 
-	chip = chart.append("svg:g")
-		.attr('transform', "rotate(#{rotate}, #{cx}, #{cy}) translate(#{cx}, #{cy}) scale(#{cs}) translate(-0.5, -0.5)")
-		
-		
-	chip.append("svg:rect")
-			.attr("x", 0)
-			.attr("y", 0)
-			.attr("width", 1)
-			.attr("height", 1)
-			.attr('fill', "#222222")
-	 
-	p = d3.scale.ordinal()
-			.domain([1..25])
-			.rangeBands([0.03, 0.97], 0.25)
-		
-	dot = chip.append("svg:circle")
-			.attr('cx', 0.1)
-			.attr('cy', 0.1)
-			.attr('r',  0.03)
-			.attr('fill', 'rgba(255, 255, 255, 0.5)')
-			
-	pins = chip.selectAll('rect.pin')
-			.data(data.pins)
-			.enter().append("svg:rect")
-				.attr('class', 'pin')
-				.attr('data-pin', (d)->d.pin)
-				.attr('fill', (d) -> 
-					if d.type == 'PWR' then '#66aa88'
-					else if not /P[AB]/.test(d.signal) then '#6688aa'
-					else '#666666'
-				)
-				.attr('width', p.rangeBand())
-				.attr('height', 0.08)
-				.attr('x', (d)->p((d.pin-1)%25+1))
-				.attr('y', -0.08)
-				.attr('transform', (d)->"rotate(#{Math.floor((d.pin-1)/25)*90}, 0.5, 0.5)")
-				.on('mouseover', (d) -> pinSelect(d.signal, d.pin))
-				.on('mouseout', -> pinDeselect())
-	
+	chip = new pkg.tqfp(100)
+	chart.select(chip.draw())
+
+	pins = d3.selectAll(chip.pins)
+		.datum(->signalsByPin[this.dataset.pin])
+		.attr('fill', (d) -> 
+			if d.type == 'PWR' then '#66aa88'
+			else if not /P[AB]/.test(d.signal) then '#6688aa'
+			else '#666666'
+		)
+		.on('mouseover', (d) -> pinSelect(d.signal, d.pin))
+		.on('mouseout', -> pinDeselect())	
+
 	tooltip = null
 	
 	pinSelect = (signal, pinno) ->
 		rects = pins.filter((d) -> d.signal == signal)
 		rects.classed('selected', true)
+
+		return
 		
 		d = pinsBySignal[signal]
 		pinno ?= d.pin
 				 	
-		angle = (Math.floor((pinno-1)/25)*90 + rotate - 90)
+		angle = (Math.floor((pinno-1)/25)*90 + -45 - 90)
 		xv = Math.cos(angle * (Math.PI / 180))
 		yv = Math.sin(angle * (Math.PI / 180))
 
@@ -112,9 +78,10 @@ drawChip = (data) ->
 	
 
 	pinDeselect = ->
-		console.log('desel', tooltip)
 		rects = pins.filter('.selected')
 		rects.classed('selected', false)
+
+		return
 			
 		if tooltip
 			tooltip
