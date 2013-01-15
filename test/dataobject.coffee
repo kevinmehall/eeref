@@ -15,8 +15,8 @@ describe 'DataObject', ->
 	it 'loads includes', (d) ->
 		m.DataObj.get(dir, 'file2.json').fetch (e, o) ->
 			throw e if e
-			delete o.data.includes
 			eq o.data, {name:'file2', a:5, b:10, opts:{x:45, y:99}, c:9}
+			eq o.allIncludes(), ['file2.json', 'file1.json']
 			d()
 
 	it 'gets data by path', (d) ->

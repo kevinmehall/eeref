@@ -1,3 +1,4 @@
+_ = require 'underscore'
 async = require 'async'
 path = require 'path'
 
@@ -116,6 +117,9 @@ nullDoc = {data:{}, source:{}}
 			async.forEach @deps, ((x, cb)->x.fetch(cb)), (err) =>
 				if err then return cb(@error=err)
 
+				# remove includes
+				delete @raw.includes
+
 				{@data, @source} = stack(merge(@deps), @raw, this)
 				@loaded = true
 				cb(false, this)
@@ -130,3 +134,9 @@ nullDoc = {data:{}, source:{}}
 			data = data[i]
 			source = source[i]
 		return {data, source}
+
+	allDeps: ->
+		[@].concat _.union (dep.allDeps() for dep in @deps)...
+
+	allIncludes: ->
+		(dep.path for dep in @allDeps())
