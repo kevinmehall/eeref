@@ -1,0 +1,10 @@
+#!/usr/bin/env coffee
+{DataObj} = require '../obj'
+{FSDir} = require '../fs'
+
+dir = new FSDir process.argv[2]
+path = process.argv[3]
+
+DataObj.get(dir, path).fetch (err, obj) ->
+	throw err if err
+	console.log JSON.stringify(obj.data, null, 4)
