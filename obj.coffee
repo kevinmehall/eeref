@@ -1,4 +1,4 @@
-#async = require 'async'
+async = require 'async'
 path = require 'path'
 
 # Split the operation off of a key name
@@ -7,6 +7,9 @@ path = require 'path'
 		{k:k.slice(0, -1), op}
 	else
 		{k, op:''}
+
+# Is a dictionary-like object (not an array)
+@isDict = isDict = (v) -> v.constructor is Object
 
 nullDoc = {data:{}, source:{}}
 
@@ -19,7 +22,7 @@ nullDoc = {data:{}, source:{}}
 #   "+" append to beginning of list
 #   "?" only if not already present
 #
-@merge = merge = ({data:a, source:aSrc}, b, thisSrc) ->
+@stack = stack = ({data:a, source:aSrc}, b, thisSrc) ->
 	o = {}
 	s = {}
 
@@ -33,7 +36,7 @@ nullDoc = {data:{}, source:{}}
 		if k not of o or op is '='
 			if v instanceof Object and v not instanceof Array
 				# Including a whole object, but we need to strip its tags and make a sources object
-				{data:o[k], source:s[k]} = merge(nullDoc, v, thisSrc)
+				{data:o[k], source:s[k]} = stack(nullDoc, v, thisSrc)
 			else
 				o[k] = v
 				s[k] = thisSrc
@@ -51,15 +54,36 @@ nullDoc = {data:{}, source:{}}
 			s[k] = thisSrc
 
 		else if o[k] instanceof Object
-			unless v instanceof Object and v not instanceof Array
+			unless isDict(v)
 				throw new Error "Can't merge dictionary with non-dictionary for property #{k}"
-			{data:o[k], source:s[k]} = merge({data:a[k], source:aSrc[k]}, v, thisSrc)
+			{data:o[k], source:s[k]} = stack({data:a[k], source:aSrc[k]}, v, thisSrc)
 
 		else
 			throw new Error "Duplicate scalar without '=' to overwrite or '?' to ignore (property #{k})"
 
 		if op is ':'
 			s[k] = ':'
+
+	return {data:o, source:s}
+
+@merge = merge = (objs) ->
+	o = {}
+	s = {}
+
+	for {data:a, source:aSrc} in objs
+		for key, v of a
+			if key not of o
+				o[key] = v
+				s[key] = aSrc[key]
+			else if isDict(o[key]) and isDict(v)
+				{data:o[key], source:s[key]} = merge [
+					{data:o[key], source:s[key]}
+					{data:v,      source:aSrc[key]}
+				]
+			else if s[key] is aSrc[key]
+				# do nothing, keep existing value
+			else
+				throw new Error "Can't merge `#{key}:` #{o[key]} and #{v}"
 
 	return {data:o, source:s}
 
@@ -82,30 +106,19 @@ nullDoc = {data:{}, source:{}}
 		return this
 
 	_load: (cb) ->
-		@dir.read @path, (e, s) =>
-			if e then return cb(@error = e)
+		@dir.read @path, (err, s) =>
+			if err then return cb(@error = err)
 
 			@raw = JSON.parse(s)
 			@deps = for p in (@raw.includes or [])
 				DataObj.get(@dir, path.join(@path, '..', p))
 
-			#async.forEach @deps, ((x, cb)->x.fetch(cb)), (err) ->
+			async.forEach @deps, ((x, cb)->x.fetch(cb)), (err) =>
+				if err then return cb(@error=err)
 
-			withData = (dep) =>
-				{@data, @source} = merge(dep, @raw, this)
+				{@data, @source} = stack(merge(@deps), @raw, this)
 				@loaded = true
 				cb(false, this)
-
-			if @deps.length == 0
-				withData(nullDoc)
-			else if @deps.length == 1
-				@deps[0].fetch (error, dep) =>
-					if error
-						@error = true 
-						return cb(error)
-					withData(dep)
-			else
-				cb(new Error 'Only one include allowed for now')
 
 		return this
 
@@ -117,4 +130,3 @@ nullDoc = {data:{}, source:{}}
 			data = data[i]
 			source = source[i]
 		return {data, source}
-
