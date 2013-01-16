@@ -89,12 +89,8 @@ nullDoc = {data:{}, source:{}}
 	return {data:o, source:s}
 
 @DataObj = class DataObj
-	@get = (dir, path) ->
-		dir.cache ?= {}
-		dir.cache[path] ?= new DataObj(dir, path)
-
-	# Private constructor: use DataObj.get
-	constructor: (@dir, @path) ->
+	# Private constructor: use DB.get
+	constructor: (@db, @path) ->
 		@data = null
 		@source = null
 		@loaded = @dirty = @error = false
@@ -107,12 +103,12 @@ nullDoc = {data:{}, source:{}}
 		return this
 
 	_load: (cb) ->
-		@dir.read @path, (err, s) =>
+		@db.fs.read @path, (err, s) =>
 			if err then return cb(@error = err)
 
 			@raw = JSON.parse(s)
 			@deps = for p in (@raw.includes or [])
-				DataObj.get(@dir, path.join(@path, '..', p))
+				@db.get(path.join(@path, '..', p))
 
 			async.forEach @deps, ((x, cb)->x.fetch(cb)), (err) =>
 				if err then return cb(@error=err)
@@ -140,3 +136,10 @@ nullDoc = {data:{}, source:{}}
 
 	allIncludes: ->
 		(dep.path for dep in @allDeps())
+
+@DB = class DB
+	constructor: (@fs) ->
+		@cache = {}
+
+	get: (path) ->
+		@cache[path] ?= new DataObj(@, path)
