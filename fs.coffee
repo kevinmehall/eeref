@@ -1,5 +1,6 @@
 fs = require 'fs'
 path = require 'path'
+readdirp = require 'readdirp'
 
 # Wrap a filesystem directory in an interface that can also be built on top of
 # a git db or browser localstorage. `/` becomes the base directory.
@@ -20,10 +21,20 @@ normalizePath = (p) ->
 		path.join(@base, normalizePath(p))
 
 	read: (fname, cb) ->
-		fs.readFile(@path(fname), cb)
+		fs.readFile(@path(fname), 'utf8', cb)
 
 	write: (fname, data, cb) ->
-		fs.writeFile(@path(fname), data, cb)
+		fs.writeFile(@path(fname), data, 'utf8', cb)
+
+	list: (fileFilter=[], cb) ->
+		r = readdirp {root:@base, directoryFilter:['!.git'], fileFilter}
+		data = []
+		r.on 'data', (entry) ->
+			data.push entry.path
+		r.on 'error', (e) ->
+			cb e, null
+		r.on 'end', ->
+			cb null, data
 
 @FSMock = class FSMock
 	constructor: (@data={}) ->
@@ -38,3 +49,6 @@ normalizePath = (p) ->
 	write: (fname, d, cb) ->
 		@data[normalizePath(fname)] = d
 		cb(false)
+
+	list: (fileFilter=[], cb) ->
+		cb null, Object.keys(@data)

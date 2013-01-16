@@ -32,3 +32,10 @@ describe 'DataObject', ->
 			eq r2.data, 99
 			eq r2.source.path, 'file2.json'
 			d()
+
+	it 'lists documents', (d) ->
+		db.list (e, l) ->
+			throw e if e
+			eq l.length, 2
+			eq l[0].path, 'file1.json'
+			d()

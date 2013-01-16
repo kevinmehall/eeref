@@ -143,3 +143,8 @@ nullDoc = {data:{}, source:{}}
 
 	get: (path) ->
 		@cache[path] ?= new DataObj(@, path)
+
+	list: (cb) ->
+		@fs.list ['*.json'], (e, l) =>
+			cb e if e
+			cb null, (@get x for x in l)
