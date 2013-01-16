@@ -99,14 +99,26 @@ nullDoc = {data:{}, source:{}}
 		if @loaded or @error
 			cb(@error, this)
 		else
-			@_load(cb)
+			@reload(cb)
 		return this
 
-	_load: (cb) ->
+	normalize: (cb) ->
+		@reload(cb, true)
+
+	reload: (cb, normalize=false) ->
 		@db.fs.read @path, (err, s) =>
 			if err then return cb(@error = err)
 
-			@raw = JSON.parse(s)
+			try
+				@raw = JSON.parse(s)
+			catch err
+				return cb(@error=err)
+
+			if @db.normalize
+				cf = @rawJSON()
+				if (@normalized = (cf != s))
+					@db.fs.write @path, cf
+
 			@deps = for p in (@raw.includes or [])
 				@db.get(path.join(@path, '..', p))
 
@@ -121,6 +133,12 @@ nullDoc = {data:{}, source:{}}
 				cb(false, this)
 
 		return this
+
+	rawJSON: -> JSON.stringify(@raw, null, 4)
+
+	save: (cb) ->
+		if @loaded
+			@db.fs.write @path, @rawJSON(), cb
 
 	get: (path) ->
 		data = @data
