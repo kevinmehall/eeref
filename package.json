@@ -1,0 +1,21 @@
+{
+  "name": "jsondb",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.coffee",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script"
+  },
+  "repository": "",
+  "author": "Kevin Mehall <km@kevinmehall.net>",
+  "license": "BSD",
+  "gitHead": "dd4a31cde53f179c1f0a52f5b5034913824ce34e",
+  "dependencies": {
+    "async": "~0.1.22",
+    "underscore": "~1.4.3",
+    "walk": "~2.2.1"
+  }
+}
