@@ -1,0 +1,24 @@
+{
+  "name": "eeref",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "dependencies": {
+    "component-coffee": "~0.1.2",
+    "coffee-script": "~1.6.2",
+    "component": "~0.13.2"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kevinmehall/eeref.git"
+  },
+  "author": "Kevin Mehall <km@kevinmehall.net>",
+  "license": "AGPLv3",
+  "private": "true"
+}

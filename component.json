@@ -7,8 +7,8 @@
   },
   "development": {},
   "scripts": [
-    "client/index.js",
-    "client/tqfp.js"
+    "client/index.coffee",
+    "client/tqfp.coffee"
   ],
   "styles": [
     "client/datasheet.css"
