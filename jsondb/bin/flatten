@@ -1,0 +1,11 @@
+#!/usr/bin/env coffee
+{DB} = require '../obj'
+{FSDir} = require '../fs'
+
+dir = '.'
+db = new DB(new FSDir dir)
+path = process.argv[2]
+
+db.get(path).fetch (err, obj) ->
+	throw err if err
+	console.log JSON.stringify(obj.data, null, 4)
