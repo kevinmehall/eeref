@@ -1,0 +1,55 @@
+Schema
+======
+
+http://code.google.com/p/gyp/wiki/InputFormatReference#Merging
+
+part
+	.partno [string]
+	.manufacturer [ref:manufacturer]
+	.datasheet [url]
+	.octopart [url]
+	.pinout [ref:pinout]
+	.series
+	.parametrics
+		.core
+		.ram
+		.flash
+		...
+	.package
+		.type
+		.pins
+		.pitch
+	.signals [map]
+		.pin [string] [ref:pin from &.package.pins]
+		.signal [string]
+	.peripherals [map]
+		.id [string]
+		.protocols [array]
+			{protocol, role, *parameters}
+		.pins
+			.use [string]
+			.signal [ref:pinMapping from &.pins]
+			.mux [string]
+
+DB
+===
+
+Edit links go to https://edit.eeref.com/app#/path/to/page
+
+App gets the HEAD git id
+As you open pages for editing, it loads the relevant files as of that commit
+Edits modify the files in localstorage
+Commit sends contents of all modified files and message
+Server validates them and commits them to a temp branch (git mktree)
+Records the commit id in sqlite
+
+Sqlite indexes pending changes path, commit, user
+Main site hits the edit server with path dependencies (hard-coded into the html)
+Returns login and edit status
+
+File directory abstraction backed by:
+  * filesystem
+  * git @ commit
+  * localstorage in the browser
+
+Layered with a table join & display library
